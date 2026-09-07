@@ -64,7 +64,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.tag }}
-          name: "Linux Disk Image Mounter ${{ steps.version.outputs.tag }}"
+          name: "iso-mounter-gui ${{ steps.version.outputs.tag }}"
           body: "Automated standalone Linux x64 build compiled via GitHub Actions."
           files: |
             all-artifacts/binary-iso-mounter-linux-x64/iso-mounter-linux-x64
